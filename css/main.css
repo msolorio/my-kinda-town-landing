@@ -594,7 +594,6 @@ HEADER BOTTOM
   padding: 9px 0;
   background: #1695a2;
   color: #fff;
-  height: 63px;
   border-bottom: 3px solid #006773;
 }
 
@@ -820,6 +819,7 @@ BANNER TEXT
   padding: 10px 14px;
   text-transform: none;
   width: 402px;
+  max-width: 100%;
   font-size: 22px;
 }
 
@@ -887,6 +887,11 @@ PROMO SECTION
   background: #ffd05a;
   border-bottom: 5px solid #ffa500;
   border-radius: 5px;
+}
+
+.button-read-more-link:hover {
+  background: #ffc024;
+  border-bottom: 5px solid #f7a000;
 }
 
 /*****************************************
@@ -1244,7 +1249,6 @@ SOCIAL
 MEDIA QUERIES
 *****************************************/
 
-
 /**************************************
 826px
 **************************************/
@@ -1258,9 +1262,6 @@ MEDIA QUERIES
     }
     .header-top-right-li {
         font-size: .8em;
-    }
-    .header-bottom {
-        height: 106px;
     }
     .logo-div {
         float: none;
@@ -1278,6 +1279,18 @@ MEDIA QUERIES
     .news-info {
         font-size: .6em;
         max-height: 47px;
+    }
+
+  .promo-section {
+    margin: 50px 0;
+  }
+
+  .banner-tail {
+    display: none;
+  }
+
+  .footer-tail {
+      display: none;
     }
 }
 
@@ -1302,13 +1315,13 @@ MEDIA QUERIES
         width: 150px;
         margin-top: 13px;
     }
-    /**************************************
+  /**************************************
   BANNER
   **************************************/
     .banner-section {
         height: 226px;
         padding: 22px 0 0;
-        display:none;
+        display: none;
     }
     .banner-section-mobile {
       display:block;
@@ -1343,16 +1356,11 @@ MEDIA QUERIES
         position: relative;
         z-index: 2;
     }
-    .banner-text-h3 {
-      background: #8c9796;
-      display:block;
-      width: 423px;
-      max-width: 100%;
-      text-align: center;
-      margin:0 auto;
-      float: none;
+    .banner-mobile-subtext {
+      margin: 0 auto;
     }
-    /**************************************
+
+  /**************************************
   SUPPORT
   **************************************/
     .support-section {
@@ -1408,6 +1416,7 @@ MEDIA QUERIES
     /**************************************
   FOOTER
   **************************************/
+    
     .copyright {
         font-size: .6em;
     }
@@ -1446,10 +1455,6 @@ MEDIA QUERIES
   .header-top-right-li {
     line-height: 16px;
   }
-
-  .header-bottom {
-    height: 134px;
-  }
   .header-nav {
     width: 100%;
   }
@@ -1460,6 +1465,21 @@ MEDIA QUERIES
   width: 100%;
   }
 
+  /*************************************
+  KEEP
+  /**************************************/
+  .header-get-started {
+    float: none;
+    width: 164px;
+    margin: 0 auto;
+  }
+
+  .header-logo {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
   /**************************************
   BANNER
   **************************************/
@@ -1467,6 +1487,10 @@ MEDIA QUERIES
       font-size: 1.2em;
       margin: 0 0 4%;
     }
+    .promo-section {
+      margin: 33px 0 50px;
+    }
+
     .news-col.third {
         display: none;
     }
@@ -1513,9 +1537,6 @@ MEDIA QUERIES
   /**************************************
   COLUMNS
   **************************************/
-    .promo-section {
-        margin: 0;
-    }
     .promo-col {
         width: 100%;
     }
@@ -1523,11 +1544,9 @@ MEDIA QUERIES
         margin: 10% 0 2.5%;
     }
     .promo-h3 {
-        margin: 5px;
-        height: 21px;
+        padding-bottom: 8px;
     }
     .promo-p {
-        margin: 10px 0;
         height: inherit;
         min-height: inherit;
     }
