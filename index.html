@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600" rel="stylesheet">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/main.css">
   <noscript>
     <style>
       .banner-section {
@@ -39,35 +39,23 @@
 <body>
 
   <header id="home">
-    <!--<div class="header-top">
-      <div class="section-wrap">
-        <span class="header-top-left left">Support: +01234567899</span>
-        <div class="header-top-right right">
-          <ul class="header-top-right-ul">
-            <li class="header-top-right-li left font-light text-light-aqua"><img class="header-top-icons" src="img/icon-sales-chat.jpg" alt=""><a class="header-top-right-a" href="#">Sales Chat</a></li>
-            <li class="header-top-right-li left font-light text-light-aqua"><img class="header-top-icons" src="img/icon-login.jpg" alt=""><a class="header-top-right-a" href="#">Login</a></li>
-            <li class="header-top-right-li left font-light text-light-aqua"><img class="header-top-icons" src="img/icon-sign-up.jpg" alt=""><a class="header-top-right-a" href="#">Sign Up</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>-->
     <div class="header-bottom">
-      <div class="section-wrap">
-        My Kinda Town
-        <!--<div class="logo-div left">
-          <img class="logo-img" src="img/logo.png" alt="">
+      <div class="section-wrap clearfix">
+        <div class="header-logo">
+          <a
+            class="header-logo-link"
+            href="https://msolorio.github.io/my-kinda-town/index.html"
+            target="_blank">My Kinda Town</a>
         </div>
-        <nav class="header-nav right">
-          <ul class="header-nav-ul">
-            <li class="header-nav-li left"><a href="#home" class="header-nav-a text-white active">Home</a></li>
-            <li class="header-nav-li left"><a href="#support" class="header-nav-a text-white">Support</a></li>
-            <li class="header-nav-li left"><a href="#reviews" class="header-nav-a text-white">Reviews</a></li>
-            <li class="header-nav-li left"><a href="#news" class="header-nav-a text-white">News</a></li>
-            <li class="header-nav-li left"><a href="#about" class="header-nav-a text-white">Products</a></li>
-            <li class="header-nav-li left"><a href="#about" class="header-nav-a text-white">About</a></li>
-            <div class="clear-both"></div>
-          </ul>
-        </nav>-->
+        <div class="header-get-started">
+          <a
+            class="header-link"
+            href="https://msolorio.github.io/my-kinda-town/index.html"
+            target="_blank">Get Started
+            <img class="header-icon" src="./img/power.svg" alt="get started" title="get started"/>
+            <img class="header-icon-hover" src="./img/power-hover.svg" alt="get started" title="get started"/>
+          </a>
+          </div>
       </div>
     </div>
   </header>
@@ -82,10 +70,7 @@
           <div class="banner-text-container absolute">
             <h3 class="banner-text-h3 banner-panel1 banner-text">Trying to Decide the perfect place to live?</h3>
 
-            <p class="banner-text-h3 banner-subtext banner-text">See how cities around the world stack up on a number of key categories.</p>
-            <!--<ul class="banner-ul">
-              <li class="banner-text banner-panel1">See how cities around the world stack up on a number of key categories.</li>
-            </ul>-->
+            <p class="banner-subtext banner-text">See how cities around the world stack up on a number of key categories.</p>
           </div>
           <img class="banner-img" src="img/banner1.png" alt="">
         </div>
@@ -95,32 +80,10 @@
             <h3 class="banner-text-h3 banner-panel1 banner-text">Trying to Decide the perfect place to live?</h3>
 
             <p class="banner-text-h3 banner-subtext banner-text">See how cities around the world stack up on a number of key categories.</p>
-            <!--<ul class="banner-ul">
-              <li class="banner-text banner-panel1">See how cities around the world stack up on a number of key categories.</li>
-            </ul>-->
           </div>
-          <img class="banner-img" src="img/banner1.png" alt="">
+          <img class="banner-img" src="img/banner2-2.png" alt="">
         </div>
 
-      </div>
-    </div>
-  </div>
-
-  <div class="banner-section-noscript">
-    <div class="section-wrap">
-      <div class="carousel">
-        <div class="single-banner relative">
-          <div class="banner-text-container text-white absolute">
-            <h3 class="banner-text-h3 banner-panel1 banner-text">get the right cloud for your app</h3>
-            <ul class="banner-ul">
-              <li class="banner-text banner-panel1">&#10095; more than 12,345 clients trust us</li>
-              <li class="banner-text banner-panel1">&#10095; 24/7 support</li>
-              <li class="banner-text banner-panel1">&#10095; performance, reliability and security</li>
-              <li class="banner-text banner-panel1">&#10095; flexible contracts</li>
-            </ul>
-          </div>
-          <img class="banner-img" src="img/banner1.png" alt="">
-        </div>
       </div>
     </div>
   </div>
@@ -132,7 +95,9 @@
 
   <div class="banner-tail-section">
     <div class="section-wrap">
-      <img class="banner-tail" src="img/banner-tail.png" alt="">
+      <div class="banner-tail-container">
+        <div class="banner-tail"></div>
+      </div>
     </div>
   </div>
 
@@ -140,234 +105,37 @@
     <div class="section-wrap">
 
       <div class="promo-row">
-        <img src="img/private-cloud.png" alt="" class="promo-img">
-        <h3 class="promo-h3">How to get started ...</h3>
+        <a
+          href="https://msolorio.github.io/my-kinda-town/index.html"
+          target="_blank"
+          class="promo-img-link">
+          <img class="promo-img" src="img/briefcase.svg" alt="">
+        </a>
+        <h3 class="promo-h3">How to get started</h3>
         <div class="promo-bodyText">
           <p class="promo-p">Type a city into the search bar and view ratings for that city on a scale from 0 to 10 for a number of key quality of life factors.</p>
+
+          <p class="promo-p">Enter more cities to compare your favorites side by side.</p>
         </div>
+        <button class="button button-read-more">
+          <a
+            class="button-link button-read-more-link"
+            href="https://msolorio.github.io/my-kinda-town/index.html"
+            target="_blank">Get Started
+          </a>
+        </button>
         <div class="clear-both"></div>
       </div>
     </div>
   </div>
-<!--
-  <div class="support-section" id="support">
-    <div class="section-wrap">
-      <div class="support-div text-dark-aqua">
-        <button class="button button-orange button-live-chat">live chat</button>
-        <h2 class="support-h2">24/7 Service <span class="mobile-500-hide">&amp; Support</span></h2>
-        <p class="support-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      </div>
-    </div>
-  </div>-->
 
-  <!--<div class="info-section">
-    <div class="section-wrap">
-      <div class="info-col left">
-        <h3 class="info-h3 text-orange">what we provide</h3>
-        <ul class="info-ul">
-          <li class="info-li">&#10004; Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-          <li class="info-li">&#10004; Cras bibendum ornare mauris porta aliquam</li>
-          <li class="info-li">&#10004; Maecenas quis rutrum quam</li>
-          <li class="info-li">&#10004; Suspendisse imperdiet sapien eu metus adipiscing</li>
-          <li class="info-li">&#10004; Maecenas quis rutrum quam, ut vulputate quam. </li>
-          <li class="info-li">&#10004; Mauris accumsan at leo ut fringilla. In bibendum varius nulla at ornare</li>
-        </ul>
-      </div>
-      <div class="info-col left">
-        <h3 class="info-h3 text-orange">performance</h3>
-        <img src="img/performance.png" alt="" class="performance-img">
-      </div>
-    </div>
+  <div class="footer-tail"></div>
+  <div class="subfooter-section bg-orange text-white">    
+    <div class="product-footer-logo">My Kinda Town</div>
+    <div>&copy; Michael Solorio</div>
     <div class="clear-both"></div>
-  </div>-->
-
-  <div class="reviews-section" id="reviews">
-    <div class="reviews-heading-section"></div>
-    <div class="reviews-list-section">
-      <div class="section-wrap">
-        Enter more cities to compare your favorite cities side by side.
-        <!--<ul class="reviews-ul text-white">
-          <li class="reviews-li left">
-            <div class="reviews-circle"></div>
-            <h4 class="reviews-h4">lorem ipsum</h4>
-            <p class="reviews-p">"Accusantium aperiam sit, provident pariatur sed alias."</p>
-          </li>
-          <li class="reviews-li left">
-            <div class="reviews-circle"></div>
-            <h4 class="reviews-h4">lorem ipsum</h4>
-            <p class="reviews-p">"Lorem ipsum dolor sit amet, consectetur adipisicing elit."</p>
-          </li>
-          <div class="mobile-640 clear-both"></div>
-          <li class="reviews-li left">
-            <div class="reviews-circle"></div>
-            <h4 class="reviews-h4">lorem ipsum</h4>
-            <p class="reviews-p">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum"</p>
-          </li>
-          <li class="reviews-li left">
-            <div class="reviews-circle"></div>
-            <h4 class="reviews-h4">lorem ipsum</h4>
-            <p class="reviews-p">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem repellat"</p>
-          </li>
-          <div class="clear-both"></div>
-        </ul>-->
-      </div>
-    </div>
-    <div class="reviews-footer-section"></div>
   </div>
 
-  <button class="button button-readMore button-blue">Get Started</button>
-
-
-  <!--<div class="news-section" id="news">
-    <div class="section-wrap">
-      <h3 class="news-h3 text-orange">news</h3>
-      <div class="news-row">
-
-        <div class="news-col first">
-          <div class="news-post">
-            <img class="news-img" src="img/moonprint.jpg" alt="">
-            <div class="news-text">
-              <img src="img/news-circle.png" alt="" class="news-circle-icon">
-              <h4 class="news-h4 text-orange">this is your latest<br/>news</h4>
-              <p class="news-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus distinctio pariatur, veritatis</p>
-              <a href="#">
-                <p class="news-read-more text-dark-aqua">read more</p>
-              </a>
-              <div class="news-info">
-                <span class="news-category left">category: science</span>
-                <span class="news-comments right"><img src="img/news-comment.png" alt="" class="comments-img">125</span>
-                <div class="clear-both"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="news-col second">
-          <div class="news-post">
-            <img class="news-img" src="img/skis.jpg" alt="">
-            <div class="news-text">
-              <img src="img/news-circle.png" alt="" class="news-circle-icon">
-              <h4 class="news-h4 text-orange">this is your latest<br/>news</h4>
-              <p class="news-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus distinctio pariatur, veritatis</p>
-              <a href="#">
-                <p class="news-read-more text-dark-aqua">read more</p>
-              </a>
-              <div class="news-info">
-                <span class="news-category left">category: environment</span>
-                <span class="news-comments right"><img src="img/news-comment.png" alt="" class="comments-img">125</span>
-                <div class="clear-both"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="news-col third">
-          <div class="news-post">
-            <img class="news-img" src="img/tunnel.jpg" alt="">
-            <div class="news-text">
-              <img src="img/news-circle.png" alt="" class="news-circle-icon">
-              <h4 class="news-h4 text-orange">this is your latest<br/>news</h4>
-              <p class="news-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus distinctio pariatur, veritatis</p>
-              <a href="#">
-                <p class="news-read-more text-dark-aqua">read more</p>
-              </a>
-              <div class="news-info">
-                <span class="news-category left">category: technology</span>
-                <span class="news-comments right"><img src="img/news-comment.png" alt="" class="comments-img">125</span>
-                <div class="clear-both"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="clear-both"></div>
-      </div>
-    </div>
-  </div>-->
-
-  <div class="subfooter-tail-section" id="about">
-    <div class="section-wrap">
-      <img class="subfooter-tail-img" src="img/subfooter-tail.png" alt="" />
-      <div class="clear-both"></div>
-    </div>
-  </div>
-  <div class="subfooter-section bg-orange text-white">
-    <div class="section-wrap">
-      <!--<div class="subfooter-col about-col">-->
-        <h3 class="about-h3">Additional Information</h3>
-        <p class="about-p">My Kinda Town uses the Teleport API for city data. Using the HAL API standard we are able to embed links and essentially package information from many HTTP requests into a single reuquest.</p>
-        <!--<ul class="about-ul">
-          <li class="about-li"><a class="about-a" href="#">about</a></li>
-          <li class="about-li">/</li>
-          <li class="about-li"><a class="about-a" href="#">terms of service</a></li>
-          <li class="about-li">/</li>
-          <li class="about-li"><a class="about-a" href="#">press</a></li>
-          <li class="about-li">/</li>
-          <li class="about-li"><a class="about-a" href="#">staff</a></li>
-          <li class="about-li">/</li>
-          <li class="about-li"><a class="about-a" href="#">news</a></li>
-        </ul>-->
-      <!--</div>-->
-      <!--<div class="subfooter-col products-col">
-        <h3 class="products-h3">products</h3>
-        <ul class="products-ul">
-          <a href="#">
-            <li class="products-li"><span class="products-arrow">&#10095;</span> private cloud</li>
-          </a>
-          <a href="#">
-            <li class="products-li"><span class="products-arrow">&#10095;</span> dedicated servers</li>
-          </a>
-          <a href="#">
-            <li class="products-li"><span class="products-arrow">&#10095;</span> hybrid cloud</li>
-          </a>
-          <a href="#">
-            <li class="products-li"><span class="products-arrow">&#10095;</span> support</li>
-        </ul>
-        </a>
-        <ul class="products-ul">
-          <a href="#">
-            <li class="products-li"><span class="products-arrow">&#10095;</span> dedicated hosting</li>
-          </a>
-          <a href="#">
-            <li class="products-li"><span class="products-arrow">&#10095;</span> email hosting</li>
-          </a>
-          <a href="#">
-            <li class="products-li"><span class="products-arrow">&#10095;</span> solutions</li>
-            <a href="#"></a>
-            <li class="products-li"><span class="products-arrow">&#10095;</span> knowledge center</li>
-          </a>
-        </ul>
-        <div class="clear-both"></div>
-        <input class="subscribe-input" type="text" placeholder="youremail@cloud.com">
-        <button class="subscribe-button button">subscribe</button>
-      </div>-->
-      <div class="clear-both"></div>
-    </div>
-  </div>
-
-  <!--<footer>
-    <div class="section-wrap text-white">
-      <span class="copyright">open cloud 2013</span>
-      <ul class="social-ul">
-        <li class="social-li">
-          <a href="#" class="social-a"><img class="social-img" src="img/social-twitter.png" alt=""></a>
-        </li>
-        <li class="social-li">
-          <a href="#" class="social-a"><img class="social-img" src="img/social-facebook.png" alt=""></a>
-        </li>
-        <li class="social-li">
-          <a href="#" class="social-a"><img class="social-img" src="img/social-google.png" alt=""></a>
-        </li>
-        <li class="social-li">
-          <a href="#" class="social-a"><img class="social-img" src="img/social-rss.png" alt=""></a>
-        </li>
-        <li class="social-li">
-          <a href="#" class="social-a"><img class="social-img" src="img/social-linkedin.png" alt=""></a>
-        </li>
-      </ul>
-      <div class="clear-both"></div>
-    </div>
-  </footer>-->
   <script src="js/main.js"></script>
 </body>
 

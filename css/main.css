@@ -481,7 +481,13 @@ ul {
 
 a {
     text-decoration: none;
-    color: #7f8c8c;
+    color: inherit;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .section-wrap {
@@ -540,23 +546,18 @@ BUTTONS
 *****************************************/
 
 .button {
-    color: #fff;
-    border: none;
-    padding: 11px 30px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    text-transform: uppercase;
+  padding: 0;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
 }
 
-.button-blue {
-    background: #77a1a0;
-    border-bottom: 3px solid #576f6f;
-}
-
-.button-orange {
-    background: #f28858;
-    border-bottom: 3px solid #b56642;
+.button-link {
+  display: block;
 }
 
 
@@ -595,7 +596,71 @@ HEADER BOTTOM
   color: #fff;
   height: 63px;
   border-bottom: 3px solid #006773;
-  font-size: 32px;
+}
+
+.header-logo {
+  font-size: 35px;
+  float: left;
+}
+
+.header-logo-link {
+  color: inherit;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.header-logo-link:hover {
+  color: #FFD700;
+}
+
+.header-get-started {
+  position: relative;
+  float: right;
+  font-size: 22px;
+}
+
+.header-link {
+  display: block;
+  position: relative;
+  top: 5px;
+  padding: 5px 25px;
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.header-link:hover {
+  color: #FFD700;
+}
+
+.header-icon {
+  width: 17px;
+  position: relative;
+  position: absolute;
+  top: 11px;
+  right: 2px;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.header-icon-hover {
+  opacity: 0;
+  width: 17px;
+  position: relative;
+  position: absolute;
+  top: 11px;
+  right: 2px;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.header-link:hover .header-icon {
+  opacity: 0;
+}
+
+.header-link:hover .header-icon-hover {
+  opacity: 1;
 }
 
 .logo-div {
@@ -641,10 +706,33 @@ BANNER SECTION
     position:relative;
 }
 
-.banner-img,
-.banner-tail {
+.banner-img {
     max-width: 100%;
 }
+
+.banner-tail {
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  background: transparent;
+  border-left: 407px solid transparent;
+  border-right: 407px solid transparent;
+  border-top: 67px solid #c8d8d7;
+}
+
+.banner-tail-container {
+  position: relative;
+}
+
+/*.button-banner {
+  display: block;
+  margin: 0 auto;
+  background: #ffd05a;
+  border-bottom: 5px solid #ffa500;
+  position: absolute;
+  top: -49px;
+  left: calc(50% - 82px);
+}*/
 
 .banner-section-mobile, .banner-section-noscript {
     display:none;
@@ -697,7 +785,6 @@ BANNER TEXT
     padding: 4px 6px;
     margin-top: 10px;
     font-size: .9em;
-    float: left;
     clear: both;
     -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.22);
     -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.22);
@@ -720,7 +807,7 @@ BANNER TEXT
 
 .banner-text-h3 {
     padding: 10px 14px;
-    font-size: 1.25em;
+    font-size: 25px;
 }
 /*.banner-panel1 {
   background: #9ad7de;
@@ -730,9 +817,17 @@ BANNER TEXT
 }*/
 
 .banner-subtext {
+  padding: 10px 14px;
   text-transform: none;
-  width: 400px;
-  /*background: #9ad7de;*/
+  width: 402px;
+  font-size: 22px;
+}
+
+.button-banner {
+  display: block;
+  margin: 0 auto;
+  background: #ffd05a;
+  border-bottom: 5px solid #ffa500;
 }
 
 /*****************************************
@@ -740,21 +835,30 @@ PROMO SECTION
 *****************************************/
 
 .promo-section {
-    margin: 43px 0 0;
+  margin: 100px 0 100px;
 }
 
 .promo-row {
     text-align: center;
 }
 
+.promo-img-link {
+  display: block;
+  max-width: 138px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+
 .promo-img {
   display: block;
-  margin: 0 auto;
-  max-width: 100%;
+  /*margin: 0 auto;*/
+  max-width: 138px;
 }
 
 .promo-h3 {
   text-align: center;
+  margin: 0;
+  padding-bottom: 20px;
   font-size: 25px;
   color: #006773;
   color: #5bc6d3;
@@ -766,19 +870,24 @@ PROMO SECTION
 }
 
 .promo-p {
-  font-size: 20px;
+  font-size: 22px;
+  margin: 0;
+  padding-bottom: 15px;
   color: #006773;
-  margin: 20px 0 7px;
   line-height: 1.5em;
 }
 
-.button-readMore {
+.button-read-more {
   display: block;
   margin: 0 auto;
-  background: #ffd05a;
-  border-bottom: 5px solid #ffa500;
 }
 
+.button-read-more-link {
+  padding: 11px 21px;
+  background: #ffd05a;
+  border-bottom: 5px solid #ffa500;
+  border-radius: 5px;
+}
 
 /*****************************************
 SUPPORT SECTION
@@ -811,9 +920,12 @@ SUPPORT SECTION
 /*****************************************
 WHAT WE PROVIDE SECTION
 *****************************************/
-
 .info-section {
-    margin-top: 74px;
+  margin-bottom: 80px;
+}
+
+.info-cols {
+  margin-bottom: 40px;
 }
 
 .info-col {
@@ -821,9 +933,15 @@ WHAT WE PROVIDE SECTION
     padding: 0 32px;
 }
 
-.info-li {
-    line-height: 27px;
-    font-size: .8em;
+.info-h3 {
+  font-size: 25px;
+  color: #5bc6d3;
+}
+
+.info-bodyCopy {
+  color: #006773;
+  line-height: 27px;
+  font-size: 20px;
 }
 
 
@@ -867,7 +985,8 @@ REVIEWS SECTION
 .reviews-list-section {
   padding: 127px 0 126px;
   z-index: 0;
-  font-size: 20px;
+  font-size: 25px;
+  text-transform: uppercase;
   background: #1695a2;
   color: #fff;
   text-align: center;
@@ -979,24 +1098,27 @@ NEWS SECTION
 /*****************************************
 SUBFOOTER TAIL SECTION
 *****************************************/
-
-.subfooter-tail-section {
-    margin-top: 54px;
+.footer-tail {
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  background: transparent;
+  border-left: 407px solid transparent;
+  border-right: 407px solid transparent;
+  border-bottom: 67px solid #006773;
 }
-
-.subfooter-tail-img {
-    max-width: 100%;
-    float: left;
-}
-
 
 /*****************************************
 SUBFOOTER SECTION
 *****************************************/
+.product-footer-logo {
+  font-size: 35px;
+}
 
 .subfooter-section {
   background: #006773;
-    padding: 16px;
+  padding: 16px;
+  text-align: center;
 }
 
 .subfooter-col {
