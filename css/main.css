@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'NunitoRegular';
+  src: url('../fonts/Nunito-Regular.ttf') format('truetype');
+}
+
 /*****************************************
 NORMALIZE
 *****************************************/
@@ -481,7 +486,8 @@ html, body {
 
 body {
   color: #7f8c8c;
-  font-family: 'Nunito', arial, sans-serif;
+  font-family: 'NunitoRegular', arial, sans-serif;
+  letter-spacing: 0.01em;
   font-weight: 300;
 }
 
@@ -507,6 +513,10 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.hide {
+  display: none;
 }
 
 .clearfix:after {
@@ -724,29 +734,28 @@ BANNER TEXT
   margin-top: 10px;
   font-size: .9em;
   clear: both;
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.22);
-  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.22);
-  -ms-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.22);
-  -o-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.22);
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.22);
+}
+
+.banner-text1 {
+  color: #fff;
+  background: #347982;
   -webkit-box-shadow: 4px 4px 0px #006773;
   -moz-box-shadow: 4px 4px 0px #006773;
   -ms-box-shadow: 4px 4px 0px #006773;
   -o-box-shadow: 4px 4px 0px #006773;
   box-shadow: 4px 4px 0px #006773;
-  color: #fff;
-  background: #347982;
 }
 
 .banner-text-h3 {
   padding: 10px 14px;
   font-size: 25px;
+  letter-spacing: 0.04em;
 }
 
 .banner-subtext {
   padding: 10px 14px;
   text-transform: none;
-  width: 402px;
+  width: 353px;
   max-width: 100%;
   font-size: 22px;
 }
@@ -828,9 +837,8 @@ SUBFOOTER TAIL SECTION
   background: #006773;
   color: #fff;
   padding: 16px;
-  text-align: center;
+  font-size: 14px;
 }
-
 
 /*****************************************
 ******************************************
@@ -856,22 +864,9 @@ MEDIA QUERIES
     width: 528px;
     margin: 7px auto 0;
   }
-  .promo-section {
-    margin: 50px 0;
-  }
-  .banner-tail {
-    display: none;
-  }
-  .footer-tail {
-    display: none;
-  }
-}
 
 
-/**************************************
-640px
-**************************************/
-@media (max-width: 640px) {
+
   /**************************************
   BANNER
   **************************************/
@@ -892,7 +887,7 @@ MEDIA QUERIES
   .banner-img-mobile {
     display: block;
     width: 100%;
-    margin: -10px auto -19px;
+    margin: -39px auto -80px;
     position: relative;
     top: -5px;
     z-index: 0;
@@ -912,6 +907,28 @@ MEDIA QUERIES
   .banner-mobile-subtext {
     margin: 0 auto;
   }
+
+  .banner-tail {
+    display: none;
+  }
+
+  .promo-section {
+    margin: 50px 0;
+  }
+
+  .footer-tail {
+    display: none;
+  }
+}
+
+
+/**************************************
+640px
+**************************************/
+@media (max-width: 575px) {
+  .banner-img-mobile {
+    margin: -9px auto -30px;
+  }
 }
 
 
@@ -924,7 +941,7 @@ MEDIA QUERIES
   }
   .header-get-started {
     float: none;
-    width: 164px;
+    width: 174px;
     margin: 0 auto;
   }
   .header-logo {
@@ -953,5 +970,11 @@ MEDIA QUERIES
   .promo-p {
     height: inherit;
     min-height: inherit;
+  }
+
+  @media (min-width) {
+    .banner-img-mobile {
+      margin: -19px auto -18px;
+    }
   }
 }
