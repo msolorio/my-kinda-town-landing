@@ -684,10 +684,6 @@ BANNER SECTION
   display: none;
 }
 
-.banner-section-mobile {
-  padding: 4%;
-}
-
 .banner-arrow {
   background: #ffd05a;
   color: #fff;
@@ -726,9 +722,11 @@ BANNER TEXT
 
 .banner-text-container {
   top: 11%;
+  left: 3px;
 }
 
 .banner-text {
+  max-width: 100%;
   text-transform: uppercase;
   padding: 4px 6px;
   margin-top: 10px;
@@ -877,6 +875,7 @@ MEDIA QUERIES
   }
   .banner-section-mobile {
     display: block;
+    padding: 21px 40px 52px;
   }
   .banner-arrow {
     display: none;
@@ -904,10 +903,15 @@ MEDIA QUERIES
     position: relative;
     z-index: 2;
   }
-  .banner-mobile-subtext {
-    margin: 0 auto;
+  .banner-text-h3-mobile {
+    width: 437px;
+    font-size: 31px;
   }
-
+  .banner-subtext {
+    width: 535px;
+    font-size: 27px;
+    float: right;
+  }
   .banner-tail {
     display: none;
   }
@@ -948,7 +952,34 @@ MEDIA QUERIES
     float: none;
     width: 100%;
     text-align: center;
+    font-size: 25px;
   }
+  .header-get-started {
+    font-size: 17px;
+    width: 140px;
+  }
+  .header-icon,
+  .header-icon-hover {
+    width: 14px;
+    top: 9px;
+    right: 9px;
+  }
+
+  /**************************************
+  BANNER
+  **************************************/
+  .banner-section-mobile {
+    padding: 20px 20px 50px;
+  }
+  .banner-text-h3-mobile {
+    font-size: 21px;
+  }
+
+  .banner-subtext-mobile {
+    margin: 0 auto;
+    font-size: 19px;
+  }
+
   .promo-section {
     margin: 33px 0 50px;
   }
@@ -966,8 +997,10 @@ MEDIA QUERIES
   }
   .promo-h3 {
     padding-bottom: 8px;
+    font-size: 23px;
   }
   .promo-p {
+    font-size: 19px;
     height: inherit;
     min-height: inherit;
   }
