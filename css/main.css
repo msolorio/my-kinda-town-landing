@@ -612,6 +612,7 @@ HEADER BOTTOM
   display: block;
   position: relative;
   top: 5px;
+  left: -7px;
   padding: 5px 25px;
   text-decoration: none;
   color: inherit;
@@ -775,7 +776,7 @@ BANNER TEXT
 
 .promo-img {
   display: block;
-  max-width: 138px;
+  width: 138px;
 }
 
 .promo-h3 {
@@ -969,31 +970,42 @@ MEDIA QUERIES
   BANNER
   **************************************/
   .banner-section-mobile {
-    padding: 20px 20px 50px;
+    background: #006773;
+    padding: 15px 20px 23px;
   }
   .banner-text-h3-mobile {
+    margin: 0;
+    padding: 0 0 10px;
     font-size: 21px;
+    background: inherit;
+    box-shadow: none;
+  }
+  .banner-subtext-mobile {
+    background: inherit;
+    box-shadow: none;
+    padding: 0;
   }
 
   .banner-subtext-mobile {
     margin: 0 auto;
     font-size: 19px;
   }
+  .banner-img-mobile {
+    display: none;
+  }
 
+  /**************************************
+  PROMO
+  **************************************/
   .promo-section {
     margin: 33px 0 50px;
-  }
-  /**************************************
-  ABOUT
-  **************************************/
-  .subfooter-tail-section {
-    margin-top: 51px;
   }
   .promo-col {
     width: 100%;
   }
   .promo-img {
-    margin: 10% 0 2.5%;
+    margin: 0 auto;
+    width: 76px;
   }
   .promo-h3 {
     padding-bottom: 8px;
